@@ -149,7 +149,7 @@ export default function SubjectsPage() {
             </form>
           </DialogContent>
         </Dialog>
-      </div>
+      </motion.div>
 
       {loading ? (
         <div className="flex items-center justify-center py-12">

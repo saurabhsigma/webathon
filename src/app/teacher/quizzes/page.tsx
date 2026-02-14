@@ -215,7 +215,7 @@ export default function TeacherQuizzesPage() {
 
   return (
     <DashboardLayout userRole="teacher" userName={user?.name}>
-      <div className="space-y-8">
+      <motion.div className="space-y-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -290,6 +290,7 @@ export default function TeacherQuizzesPage() {
             </div>
           </CardContent>
         </Card>
+        </motion.div>
 
         {/* Create Quiz Form - Continuation in next message due to length */}
         <AnimatePresence>
@@ -529,7 +530,7 @@ export default function TeacherQuizzesPage() {
             </CardContent>
           </Card>
         )}
-      </div>
+      </motion.div>
     </DashboardLayout>
   );
 }
