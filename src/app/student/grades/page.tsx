@@ -49,7 +49,7 @@ export default function StudentGradesPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            whileHover={{ scale: 1.05, y: -5 }}
+            whileHover={{ y: -2 }}
           >
             <Card className="doodle-card bg-white border-4 border-green-600">
               <CardContent className="pt-6">
@@ -70,7 +70,7 @@ export default function StudentGradesPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            whileHover={{ scale: 1.05, y: -5 }}
+            whileHover={{ y: -2 }}
           >
             <Card className="doodle-card bg-white border-4 border-blue-600">
               <CardContent className="pt-6">
@@ -91,7 +91,7 @@ export default function StudentGradesPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            whileHover={{ scale: 1.05, y: -5 }}
+            whileHover={{ y: -2 }}
           >
             <Card className="doodle-card bg-white border-4 border-yellow-600">
               <CardContent className="pt-6">

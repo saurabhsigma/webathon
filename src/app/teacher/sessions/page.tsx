@@ -99,7 +99,7 @@ export default function SessionsPage() {
           </div>
           <Link href="/teacher/sessions/create">
             <motion.div
-              whileHover={{ scale: 1.05, rotate: 5 }}
+              whileHover={{ y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
               <Button className="doodle-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold border-2 border-white shadow-xl text-lg px-6 py-6">
@@ -120,7 +120,7 @@ export default function SessionsPage() {
           {(['all', 'scheduled', 'live', 'completed'] as const).map((status, idx) => (
             <motion.button
               key={status}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ y: -1 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setFilter(status)}
               className={`px-6 py-3 rounded-2xl font-bold text-sm transition-all ${
@@ -157,7 +157,7 @@ export default function SessionsPage() {
                 <p className="text-gray-600 mb-6">Start by scheduling your first virtual class!</p>
                 <Link href="/teacher/sessions/create">
                   <motion.div
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button className="doodle-button bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-lg px-8 py-6">
@@ -177,7 +177,7 @@ export default function SessionsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
-                whileHover={{ scale: 1.03, y: -8 }}
+                whileHover={{ y: -2 }}
                 className="group"
               >
                 <div className="relative glass-card border-2 border-white h-full hover:shadow-2xl transition-all duration-300 overflow-hidden">
@@ -198,8 +198,8 @@ export default function SessionsPage() {
                   <CardHeader className="relative z-10 pb-4">
                     <div className="flex items-start gap-4">
                       <motion.div
-                        whileHover={{ rotate: 360, scale: 1.1 }}
-                        transition={{ duration: 0.6 }}
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ duration: 0.3 }}
                         className={`w-16 h-16 rounded-2xl ${
                           session.status === 'live'
                             ? 'bg-gradient-to-br from-red-500 to-pink-500'
@@ -254,7 +254,7 @@ export default function SessionsPage() {
                     <div className="pt-4">
                       {session.status === 'scheduled' && (
                         <motion.button
-                          whileHover={{ scale: 1.05 }}
+                          whileHover={{ y: -1 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={async () => {
                             try {

@@ -36,7 +36,7 @@ export default function TeacherDashboard() {
           </div>
           <Link href="/teacher/classes/create">
             <motion.div 
-              whileHover={{ scale: 1.05, rotate: 5 }} 
+              whileHover={{ y: -2 }} 
               whileTap={{ scale: 0.95 }}
             >
               <Button className="doodle-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold border-2 border-white shadow-xl text-lg px-6 py-6">
@@ -88,7 +88,7 @@ export default function TeacherDashboard() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              whileHover={{ scale: 1.05, y: -8 }}
+              whileHover={{ y: -2 }}
               className="relative group"
             >
               <div className={`stat-card bg-gradient-to-br ${stat.bgGradient} border-2 border-white relative overflow-hidden group`}>
@@ -148,7 +148,7 @@ export default function TeacherDashboard() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.5 + index * 0.1 }}
-                      whileHover={{ scale: 1.08, y: -8 }} 
+                      whileHover={{ y: -2 }} 
                       whileTap={{ scale: 0.95 }}
                       className="group"
                     >

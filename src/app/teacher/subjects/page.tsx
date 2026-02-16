@@ -81,7 +81,7 @@ export default function SubjectsPage() {
           </div>
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger asChild>
-              <motion.div whileHover={{ scale: 1.05, rotate: 5 }} whileTap={{ scale: 0.95 }}>
+              <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }}>
                 <Button className="doodle-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold border-2 border-white shadow-xl text-lg px-6 py-6">
                   <Plus className="mr-2 h-4 w-4" />
                   Add Subject

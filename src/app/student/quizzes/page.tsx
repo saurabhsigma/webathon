@@ -190,8 +190,8 @@ export default function StudentQuizzesPage() {
                                 <div className="flex-1">
                                   <div className="flex items-start gap-4 mb-3">
                                     <motion.div
-                                      whileHover={{ rotate: 360 }}
-                                      transition={{ duration: 0.6 }}
+                                      whileHover={{ scale: 1.05 }}
+                                      transition={{ duration: 0.3 }}
                                       className={`w-14 h-14 rounded-2xl ${
                                         attempted?.passed
                                           ? 'bg-gradient-to-br from-green-500 to-emerald-500'
@@ -231,7 +231,7 @@ export default function StudentQuizzesPage() {
                                 
                                 <div className="flex gap-3 ml-4">
                                   <motion.button
-                                    whileHover={{ scale: 1.05 }}
+                                    whileHover={{ y: -2 }}
                                     whileTap={{ scale: 0.95 }}
                                     onClick={() => startQuiz(quiz)}
                                     className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-xl shadow-md"
@@ -240,7 +240,7 @@ export default function StudentQuizzesPage() {
                                   </motion.button>
                                   {attempted && (
                                     <motion.button
-                                      whileHover={{ scale: 1.05 }}
+                                      whileHover={{ y: -2 }}
                                       whileTap={{ scale: 0.95 }}
                                       onClick={() => reviewAttempt(attempted, quiz)}
                                       className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-xl shadow-md"
@@ -274,7 +274,7 @@ export default function StudentQuizzesPage() {
                 {selectedQuiz?.title}
               </h1>
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setViewMode('list')}
                 className="bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-600 hover:to-gray-700 text-white font-bold py-3 px-6 rounded-xl shadow-md"

@@ -146,7 +146,7 @@ export default function StudentDashboard() {
           </div>
           <Link href="/student/classes">
             <motion.div 
-              whileHover={{ scale: 1.05, rotate: 5 }} 
+              whileHover={{ y: -2 }} 
               whileTap={{ scale: 0.95 }}
             >
               <Button className="doodle-button bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold border-2 border-white shadow-xl text-lg px-6 py-6">
@@ -198,7 +198,7 @@ export default function StudentDashboard() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
-              whileHover={{ scale: 1.05, y: -8 }}
+              whileHover={{ y: -2 }}
               className="relative group"
             >
               <div className={`stat-card bg-gradient-to-br ${stat.bgGradient} border-2 border-white relative overflow-hidden group`}>
@@ -268,14 +268,14 @@ export default function StudentDashboard() {
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.5 + idx * 0.1 }}
-                      whileHover={{ scale: 1.02, x: 8 }}
+                      whileHover={{ y: -2 }}
                       className="group"
                     >
                       <div className="flex items-center justify-between p-5 glass-card border-2 border-white hover:border-purple-400 hover:shadow-xl transition-all">
                         <div className="flex items-center gap-4">
                           <motion.div 
-                            whileHover={{ rotate: 360 }}
-                            transition={{ duration: 0.6 }}
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ duration: 0.3 }}
                             className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold shadow-lg"
                           >
                             <FaClock className="text-xl" />
@@ -334,7 +334,7 @@ export default function StudentDashboard() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.7 + idx * 0.1 }}
-                      whileHover={{ scale: 1.05, y: -8 }}
+                      whileHover={{ y: -2 }}
                       className="group"
                     >
                       <div className="relative glass-card border-2 border-white h-full p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden">
@@ -371,7 +371,7 @@ export default function StudentDashboard() {
                           <div className="flex gap-2">
                             <Link href={`/student/chat?subject=${subject._id}`} className="flex-1">
                               <motion.button 
-                                whileHover={{ scale: 1.05 }}
+                                whileHover={{ y: -1 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold text-sm py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md"
                               >
@@ -380,7 +380,7 @@ export default function StudentDashboard() {
                             </Link>
                             <Link href={`/student/materials?subject=${subject._id}`} className="flex-1">
                               <motion.button 
-                                whileHover={{ scale: 1.05 }}
+                                whileHover={{ y: -1 }}
                                 whileTap={{ scale: 0.95 }}
                                 className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold text-sm py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md"
                               >
@@ -425,7 +425,7 @@ export default function StudentDashboard() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.9 + index * 0.1 }}
-                      whileHover={{ scale: 1.08, y: -8 }} 
+                      whileHover={{ y: -2 }} 
                       whileTap={{ scale: 0.95 }}
                       className="group"
                     >

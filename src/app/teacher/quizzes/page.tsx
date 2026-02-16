@@ -229,7 +229,7 @@ export default function TeacherQuizzesPage() {
             <p className="text-gray-600 font-medium mt-2">Create intelligent quizzes with AI assistance 🤖</p>
           </div>
           <motion.div
-            whileHover={{ scale: 1.05, rotate: 5 }}
+            whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             <Button

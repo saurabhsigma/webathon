@@ -209,7 +209,7 @@ export default function TeacherMaterialsPage() {
           <Dialog open={isUploadModalOpen} onOpenChange={setIsUploadModalOpen}>
             <DialogTrigger asChild>
               <motion.div
-                whileHover={{ scale: 1.05, rotate: 5 }}
+                whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Button className="doodle-button bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold border-2 border-white shadow-xl text-lg px-6 py-6">
@@ -317,7 +317,7 @@ export default function TeacherMaterialsPage() {
               </Label>
               <div className="flex gap-2 flex-wrap">
                 {classes.map(cls => (
-                  <motion.div key={cls._id} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <motion.div key={cls._id} whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }}>
                     <Button
                       variant={selectedClass === cls._id ? 'default' : 'outline'}
                       onClick={() => setSelectedClass(cls._id)}
@@ -340,7 +340,7 @@ export default function TeacherMaterialsPage() {
               </Label>
               <div className="flex gap-2 flex-wrap">
                 {subjects.length > 0 ? subjects.map(sub => (
-                  <motion.div key={sub._id} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <motion.div key={sub._id} whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }}>
                     <Button
                       variant={selectedSubject === sub._id ? 'default' : 'outline'}
                       onClick={() => setSelectedSubject(sub._id)}
@@ -399,7 +399,7 @@ export default function TeacherMaterialsPage() {
                       <div className="bg-white p-3 rounded-xl shadow-md">
                         {getIcon(item.type)}
                       </div>
-                      <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9 }}>
+                      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>
                         <Button
                           variant="ghost"
                           size="icon"
@@ -422,14 +422,14 @@ export default function TeacherMaterialsPage() {
                       </div>
                       <div className="flex gap-2">
                         <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex-1">
-                          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full">
+                          <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }} className="w-full">
                             <Button variant="outline" className="w-full border-2 border-blue-200 text-blue-600 hover:bg-blue-50 hover:border-blue-400 font-semibold">
                               View
                             </Button>
                           </motion.div>
                         </a>
                         <a href={item.url} download className="flex-1">
-                          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="w-full">
+                          <motion.div whileHover={{ y: -1 }} whileTap={{ scale: 0.95 }} className="w-full">
                             <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold border-2 border-white shadow-lg">
                               <FaDownload className="mr-1" /> Download
                             </Button>
